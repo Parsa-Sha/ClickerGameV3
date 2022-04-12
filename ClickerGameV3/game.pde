@@ -43,6 +43,7 @@ void game() {
 
   clickCooldown++;
   clickCooldown = min(10, clickCooldown);
+  
   strokeWeight(3);
   stroke(0, 0, 255);
   noFill();
@@ -51,8 +52,7 @@ void game() {
   rotate(-HALF_PI);
   arc(0, 0, 30, 30, 0, clickCooldown*TWO_PI/10);
   popMatrix();
-
-
+  
   highscore = max(highscore, targetsDestroyed);
 
 

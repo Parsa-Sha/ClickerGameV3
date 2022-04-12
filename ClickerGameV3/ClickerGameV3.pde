@@ -12,7 +12,6 @@
 
 // Could also impliment structs to store all of the theme colours, backgrounds, characters, etc.
 
-
 // This version has these changed from V2:
 // Every three seconds, a slime spawns
 // You must kill slimes in time before they cover the screen
@@ -21,9 +20,6 @@
 // Hidden ending where if there are no slimes, or correct code is entered, secret ending is found
 
 // To do list
-// Secret code, numbers in alphabetical order
-// Defeat by invasion & defeat by lives lost
-// Cursor & cooldown modifications
 
 
 import ddf.minim.*;
@@ -73,7 +69,7 @@ final char secretcode[] = new char[10];
 char currentcode[] = new char[10];
 
 void setup() {
-  size(800, 800, P2D);
+  size(800, 800);
   mode = INTRO;
   
   livesCounter[0] = loadImage("lives\\noLives.png"); // Loading the three lives representations
