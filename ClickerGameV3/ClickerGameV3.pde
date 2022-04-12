@@ -33,7 +33,7 @@ import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 Minim minim;
-AudioPlayer theme, coin, bump, gameover, introTheme;
+AudioPlayer theme, coin, bump, gameover, introTheme, gamewon;
 
 int mode;
 final int INTRO = 0;
@@ -133,6 +133,7 @@ void setup() {
   bump = minim.loadFile("audioFiles\\bump.wav");
   gameover = minim.loadFile("audioFiles\\gameover.wav");  
   introTheme = minim.loadFile("audioFiles\\gameTheme.mp3");
+  gamewon = minim.loadFile("audioFiles\\gameWon.mp3");
   
   myTargets = new ArrayList<Target>();
 }
